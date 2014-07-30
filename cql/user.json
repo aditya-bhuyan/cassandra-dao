@@ -1,0 +1,5 @@
+{
+	"select":"Select * from user",
+	"insert":"insert into user (id,name) values(?,?)",
+	"update":"update user set name = ? where id = ?"
+}
