@@ -1,0 +1,4 @@
+{
+	"insert":"insert into emails(id,username,emails) values(?,?,?)",
+	"select":"select id,username,emails from emails where username = ?"
+}

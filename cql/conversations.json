@@ -1,0 +1,8 @@
+{
+	"insert":"insert into teams (id,address,description,language,manager,name,org_id,phone,sla,time_zone) values (?,?,?,?,?,?,?,?,?,?)",
+	"insertCategoryTeam":"insert into categories_teams (category_id,team_id) values (?,?)",
+	"updateManager":"UPDATE teams set manager = ? where id = ?",
+	"addEmployee":"insert into employees_teams (emp_id,team_id) values(?,?)",
+	"deleteEmployee":"delete from employees_teams where emp_id = ? and team_id = ?",
+	"selectById":"SELECT * from teams where id = ?"
+}
