@@ -15,6 +15,3 @@ exports.selectUser = function(id){
 	dao.selectUser(id);
 }
 
-var test = function (name){
-	dao.addUser(name); 
-}

@@ -8,5 +8,6 @@ To use this application make the following steps
 sudo npm install node-cassandra-cql
 sudo npm install node-uuid
 sudo npm install express
+sudo npm install jade
 
 Then start using its apis

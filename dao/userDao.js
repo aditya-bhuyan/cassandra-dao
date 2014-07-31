@@ -12,10 +12,7 @@ exports.addUser = function(name){
     var strQuery = queries.insert;
     console.log(strQuery);
     
-    console.log(cassandra);
-    console.log(cassandra.client);
-
-    cassandra.client.execute(strQuery,[id,'Aditya'],function(err){
+    cassandra.client.execute(strQuery,[id,name],function(err){
 	if(err){
 		console.log(err);
 	}else{
@@ -29,7 +26,7 @@ exports.updateUser = function(id,name){
         var strQuery = queries.update;
         console.log(strQuery);
 
-        cassandra.client.execute(strQuery,['Aditya',id],function(err){
+        cassandra.client.execute(strQuery,[name,id],function(err){
     	if(err){
     		console.log(err);
     	}else{
