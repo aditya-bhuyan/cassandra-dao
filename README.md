@@ -10,4 +10,9 @@ sudo npm install node-uuid
 sudo npm install express
 sudo npm install jade
 
+
+install cassandra
+start cassandra 
+run the file schema/demo.cql
+
 Then start using its apis
